@@ -1,0 +1,16 @@
+# Git version
+git --version
+
+### Configuring Git ###
+
+# configure the name that Git will associate with your work
+git config --global user.name "Jayita Roy"
+
+# set up your email associated with Git
+git config --global user.email abc@abc.com
+
+# check the user name associate with your Git account
+git config user.name
+
+# check the email associated with your Git account
+git config user.email
