@@ -1,0 +1,22 @@
+# initialize the git on current path
+git init
+
+# Note: Do not initialize a repo inside a git repo
+
+# show git repo history
+git log
+
+# show the status of the current repo
+git status
+
+# remove a directory being git repo
+Just delete the .git folder inside the repo.
+
+# add multiple files
+git add file1 file2
+
+# add all the changes
+git add .
+
+# commit the changes
+git commit -m "commit message"
