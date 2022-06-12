@@ -1,0 +1,49 @@
+1. mkdir Shopping
+
+2.  cd Shopping
+    # check to make sure not already inside a git repo
+    git status
+    # initialize new git repo
+    git init
+
+3. touch yard.txt
+4. touch groceries.txt
+5. 
+    # first add both the files
+    git add .
+    # commit the changes
+    git commit -m "create yard and groceries lists"
+
+6. vi yard.txt
+    2 bags of potting soil
+    1 bag of worm castings
+
+7. vi groceries.txt
+    4 tomatoes
+    6 shallots
+    1 fennel bulb
+
+8. # add changes of groceries.txt
+    git add groceries.txt
+  # commit changes
+    git commit -m "add ingredients for tomato soup"
+
+9. # add changes of yard.txt
+    git add yard.txt
+   # commit the changes
+    git commit -m "add items needed for garden box"
+
+10. vi groceries.txt
+    couple of seed potatos
+
+11. vi yard.txt
+    3 bags of potting soil
+    1 bag of worm castings
+
+12. # add all the changes
+    git add .
+    # commit both the changes
+    git commit -m "add items needed to grow potatoes"
+
+13. # see all the commits
+    git log
