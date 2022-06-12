@@ -20,3 +20,6 @@ git add .
 
 # commit the changes
 git commit -m "commit message"
+
+# if you want to modify the previous commit
+git commit --amend
