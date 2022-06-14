@@ -1,0 +1,26 @@
+# show all the branches in the current repo
+# the * refers the current branch where we are right now
+git branch
+
+# creating branches
+    # The below command do create a new branch, but do not switch to it
+    a. git branch brach_name
+    # Create new branch + switch to the new branch
+    b. git checkout -b branch_name
+    c. git switch -c branch_name
+
+# simply switching branches
+a. git switch branch_name
+b. git checkout branch_name
+
+# add and commit in single command
+git commit -a -m "commit message"
+
+# deleting a branch
+# please note that you cannot delete your current branch, you have to switch to another branch in order to delete the current branch
+# -D means forcefully deleting the branch
+git branch -D branch_name
+
+# rename a branch
+# to rename a branch you have to be on that branch
+git branch -m new_branch_name
