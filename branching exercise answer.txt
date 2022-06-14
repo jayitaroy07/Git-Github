@@ -1,0 +1,34 @@
+1. mkdir Patronus
+2.  # go inside the folder
+    a. cd Patronus
+    # check if it's not already a git repo
+    b. git status
+    # initiate it as a git repo
+    c. git init
+3. touch patronus.txt
+4. # add and commit an empty file
+    git commit -a -m "add empty patronus file"
+5. # create a new branch called harry from the master branch or without switching
+    git branch harry
+   # create another branch called snape from the master branch or without switching
+   git branch snape
+6. # move to harry
+    git switch harry
+7. 
+8.  git add patronus.txt
+    git commit -m "add harry's stag patronus"
+9. git checkout snape
+10. 
+11. git commit -a -m "add snape's doe patronus"
+12. # create a new branch lily from snape branch
+    git branch lily
+13. # move to lilly branch
+    git switch lilly
+14. 
+15. git commit -a -m "add lily's doe patronus"
+16. # git command to show all the branches
+    git branch
+17. # currently at branch lilly
+    # delete snape branch
+    git branch -D snape
+
