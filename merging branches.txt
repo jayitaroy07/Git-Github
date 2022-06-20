@@ -1,0 +1,21 @@
+1.   # we merge branches, not specific commits.
+    # we always merge to the current HEAD branches
+
+    # switch to master branch
+    git switch master
+
+    # bugfix gets merged to master branch
+    git merge bugfix
+
+    # always switch to the destination branch, and then merge the auxiliary branch to the destination branch
+    # during the merge only the content gets merged from one file to another, the branches still remain the same and separated.
+
+    # merge conflicts: when same files's same line has updated in two different branches i.e master and bugfix branches in our case, in that case we come across merge conflict problem.
+    # you need to manually fix the problem and then merge it.
+
+    # Resolving the conflicts:
+    # a. open up the files with merge conflicts.
+    # b. edit the files to remove the conflicts. Decide which branch's content you want to keep in each conflict or keep the content from both.
+    # c. remove the conflict markers in the document.
+    # d. add your changes and then make a commit.
+    

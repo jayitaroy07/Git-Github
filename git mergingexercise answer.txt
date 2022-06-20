@@ -1,0 +1,76 @@
+# create a new repo
+mkdir merging-exercise
+cd merging-exercise
+# check if already a git repo
+git status
+# initialize git
+git init
+# create a file
+touch greetings.txt
+# add the file
+git add greetings.txt
+# commit the changes
+git commit -m "add greetings file."
+
+1. # crate a new branch
+git switch -c spanish
+# update the greetings.txt
+# check the status
+git status
+# add changes
+git add greetings.txt
+# add commits
+git commit -m "add spanish greetings."
+# switch to master branch
+git switch master
+# merge the spanish branch
+git merge spanish
+
+# In fast forward merge, no changes in the master branch after the child branch has been created. During merge, master branch gets updated to new branch.
+
+2. # Merge commits with no conflicts
+# currently at master branch
+# switch to french branch
+git switch -c french
+# update greetings.txt
+# check status
+git status
+# add and commit the changes
+git commit -am "add french greetings"
+# switch to master branch
+git switch master
+# create new file farewells.txt
+touch farewells.txt
+# check status
+git status
+# commit the changes
+git commit -am "add farewells file"
+# check if any uncommitted changes
+git status
+# merge french branch to master
+git merge french
+
+# In this scenario, we did merge the changes with no conflicts since the changes made in master and french branch was on completely different files.
+
+3. # conflicts
+# create new branch japanese
+git switch -c japanese
+# update greetings.txt
+# check status
+git status
+# commit the changes
+git commit -am "add japanese greetings"
+# switch to master branch
+git switch master
+# update greetings.txt
+# commit the changes
+git commit -am "add hello"
+# in this case the same file greetings.txt has been updated differently in master and japanese branch. That causes the conflicts while trying to merge japanese to master.
+# git merge japanese
+# manually fix the conflicts
+# check the status/changes
+git status
+# commit the changes
+git commit -am "resolve conflicts"
+# check commits in one line
+git log --oneline
